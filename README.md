@@ -3,3 +3,6 @@ Player Movement seems a little floaty likely due to calculations made.
 
 Notes for future:
 Cube the player is will be replaced with a different sprite likely something more oval shaped that posiitions itself based on where the player is looking mimicing charetecter sight/head movement.
+
+Things to add: 
+Make a gun and or basic inventory system for guns (ie player can only hold 1 primary and 1 secondary gun) Also when coding guns avoid hard variables or some sort of universial system that can apply to a bunch of diffrtent guns to avoid hard coded stats or similar issues.
