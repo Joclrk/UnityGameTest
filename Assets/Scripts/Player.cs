@@ -52,6 +52,7 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        MovSpeed = MovSpeed * Time.fixedDeltaTime;
         rb.linearVelocity = new Vector2(input.x, input.y).normalized * MovSpeed; //move speed calculation and normalization to avoid faster diagonal movement.
     }
 }
