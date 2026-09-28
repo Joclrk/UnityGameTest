@@ -20,12 +20,12 @@ public class Movement : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift)) //Sprint if Shift pressed
+        if (Input.GetKey(KeyCode.LeftShift)) //Jog if Shift pressed
         {
             MovSpeed = JogSpeed;
             IsJog = true;
         }
-        else if(Input.GetKey(KeyCode.LeftShift) ||(Input.GetKey(KeyCode.LeftControl)))  //Jog if crtl pressed
+        else if(Input.GetKey(KeyCode.LeftShift) ||(Input.GetKey(KeyCode.LeftControl)))  //Run if crtl pressed
         {
             MovSpeed = RunSpeed;
             IsRun = true;
