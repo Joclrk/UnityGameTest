@@ -6,6 +6,10 @@ public class Movement : MonoBehaviour
     private Rigidbody2D rb; //variable call
     private Vector2 input;
     private Vector2 MousePos;
+    //below are currently test variables for a player movement system based on how the player is moving (ie running and jogging make you faster for a set time meanwhile slow makes you slow walk for better aim and controll at the cost of being slower)
+    bool IsRun = false;
+    bool IsJog = false;
+    bool IsSlow = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); //variable call
@@ -23,6 +27,11 @@ public class Movement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+       // if (Input.GetKeyDown(KeyCode.LeftShift)) hypothetical test for a player run system wont be used and will be overhauled instead.
+       //     { MovSpeed = 40f; }
+
+       // else
+       //     { MovSpeed = 20f; }
         rb.linearVelocity = new Vector2(input.x, input.y).normalized * MovSpeed; //move speed calculation and normalization to avoid faster diagonal movement.
     }
 }
