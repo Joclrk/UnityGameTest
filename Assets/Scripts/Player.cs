@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    //NOTE: chaning these vairables do nothing instead change them in the script section of a object.
     [SerializeField] float DefSpeed = 20f; //set DefualtSpeed
     [SerializeField] float MovSpeed = 10f; //set MoveSpeed
     [SerializeField] float JogSpeed = 20f; //set JogSpeed
     [SerializeField] float SlowSpeed = 20f; //set SlowSpeed
     [SerializeField] float RunSpeed = 30f; //set RunSpeed
     private Rigidbody2D rb; //variable call
-    private Vector2 input;
-    private Vector2 MousePos;
+    private Vector2 input; //reads for inputs
+    private Vector2 MousePos; //calls for and tracts mouse postion
     //below are currently test variables for a player movement system based on how the player is moving (ie running and jogging make you faster for a set time meanwhile slow makes you slow walk for better aim and controll at the cost of being slower)
     bool IsRun = false;
     bool IsJog = false;
